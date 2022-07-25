@@ -288,3 +288,9 @@ a {
 .navActive, .navActive a{
   color: var(--secondary);
 }
+
+.links a{
+  font-size: 30px;
+  margin-right: 20px;
+  color: #31d628;
+}
