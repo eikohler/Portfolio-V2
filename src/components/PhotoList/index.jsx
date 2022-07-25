@@ -58,8 +58,8 @@ function PhotoList(){
           <Modal currentPhoto={currentPhoto} onClose={toggleModal} />
         )}
         <div className="row">
-          {photos.map((image, i) => (            
-            <div className='col-6 px-3'>
+          {photos.map((image, i) => (     
+            <div className='col-6 px-3' key={image.name}>
               <img
                 src={require(`../../assets/portfolio-images/${i}.jpg`)}
                 alt={image.name}
@@ -67,7 +67,7 @@ function PhotoList(){
                 onClick={() => toggleModal(image, i)}
                 key={image.name}
               /> 
-            </div>                                     
+            </div>                                          
           ))}
         </div>
       </div>

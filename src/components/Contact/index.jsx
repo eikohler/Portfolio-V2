@@ -36,24 +36,27 @@ function ContactForm() {
     return (
         <section>
           <h1>Contact me</h1>
-          <form id="contact-form" onSubmit={handleSubmit}>
-          <div>
-            <label htmlFor="name">Name:</label>
-            <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
-            </div>
-            <div>
-            <label htmlFor="email">Email address:</label>
-            <input type="email" defaultValue={email} name="email" onBlur={handleChange} />
-            </div>
-            <div>
-            <label htmlFor="message">Message:</label>
-            <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" />
-            </div>
+          <p>Email:<a href="mailto:erickohler1600@gmail.com">erickohler1600@gmail.com</a></p> 
+          <p>Phone:<a href="tel:9059642757">905.964.2757</a></p> 
+          <form className="mt-5" id="contact-form" onSubmit={handleSubmit}>
+        <div className='container-fluid'>
+            <section className='row mb-2'>
+                <div className='col-6 p-0 pr-1'>
+                    <input className="w-100" placeholder="Your Name" type="text" defaultValue={name} onBlur={handleChange} name="name" />
+                </div>
+                <div className='col-6 p-0 pl-1'>
+                    <input className="w-100" placeholder="Your Email" type="email" defaultValue={email} name="email" onBlur={handleChange} />
+                </div>
+                <div className='mt-2 col-12 p-0'>
+                    <textarea className="w-100" placeholder="Your Message" name="message" defaultValue={message} onBlur={handleChange} rows="5" />
+                </div>
             {errorMessage && (
                 <div>
                     <p className="error-text">{errorMessage}</p>
                 </div>
             )}
+            </section>
+        </div>
             <button type="submit">Submit</button>
           </form>
         </section>

@@ -4,7 +4,7 @@ function Resume() {
   return (
     <div className='links'>
       <a href="https://my.indeed.com/p/xqeac6x" target="_blank" rel="noopener noreferrer">
-      <i class="fa fa-file-text-o"></i> Resume</a>
+      <i className="fa fa-file-text-o"></i> Resume</a>
       <h3 className='mt-5'>Proficiencies</h3>
       <ul className='dots'>
         <li>
