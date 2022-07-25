@@ -8,18 +8,18 @@ function App() {
   const [currentNav, setCurrentNav] = useState('about');
 
   return (
-    <div>
+    <>
       <Nav
         setCurrentNav={setCurrentNav}
         currentNav={currentNav}
       ></Nav>
-      <main>
+      <main className='container my-5'>
       {currentNav === 'about' && <About />}
       {currentNav === 'portfolio' && <PhotoList />}
       {currentNav === 'contact' && <ContactForm />}      
       {currentNav === 'resume' && <About />}
       </main>
-    </div>
+    </>
   );
 }
 

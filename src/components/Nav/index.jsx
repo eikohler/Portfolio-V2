@@ -7,14 +7,14 @@ function Nav(props) {
   } = props;
 
   return (
-    <header className="flex-row px-1 space-between">
+    <header className="container d-flex align-items-center my-3 space-between">
       <h2>
         <a data-testid="link" href="/">
           <span role="img" aria-label="camera"> 😊</span> Eric Kohler
         </a>
       </h2>
       <nav>
-        <ul className="flex-row">
+        <ul className="flex-row mb-0">
           <li className={`mx-2 ${currentNav === 'about' && `navActive`}`}>
             <span onClick={() => setCurrentNav('about')}>About Me</span>
           </li>
