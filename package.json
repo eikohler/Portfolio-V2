@@ -1,6 +1,6 @@
 {
   "homepage": "https://eikohler.github.io/Portfolio-V2/",
-  "name": "photo-port",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
