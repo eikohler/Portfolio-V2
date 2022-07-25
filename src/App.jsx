@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
+import Footer from './components/Footer';
+import Resume from './components/Resume';
 import ContactForm from './components/Contact';
 import PhotoList from './components/PhotoList';
 
@@ -17,8 +19,9 @@ function App() {
       {currentNav === 'about' && <About />}
       {currentNav === 'portfolio' && <PhotoList />}
       {currentNav === 'contact' && <ContactForm />}      
-      {currentNav === 'resume' && <About />}
+      {currentNav === 'resume' && <Resume />}
       </main>
+      <Footer />
     </>
   );
 }

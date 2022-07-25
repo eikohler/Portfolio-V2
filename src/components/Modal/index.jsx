@@ -10,7 +10,7 @@ const Modal = ({ onClose, currentPhoto }) => {
           <p>{description}</p>
           <div className='mb-4 links'>
             <a href={link} target="_blank" rel="noopener noreferrer"><i className="fa fa-television"></i></a>
-            <a href={github} target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a>
+            <a href={github} target="_blank" rel="noopener noreferrer"><i className="fa fa-github"></i></a>
           </div>
           <button onClick={onClose} type="button">Close this modal</button>
         </div>
