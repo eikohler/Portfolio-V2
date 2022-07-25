@@ -9,7 +9,7 @@ function Nav(props) {
   return (
     <header className="container d-flex align-items-center my-3 space-between">
       <h2>
-        <a data-testid="link" href="/">
+        <a data-testid="link" href="/Portfolio-V2">
           <span role="img" aria-label="camera"> 😊</span> Eric Kohler
         </a>
       </h2>
