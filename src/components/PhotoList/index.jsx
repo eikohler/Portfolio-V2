@@ -47,7 +47,7 @@ function PhotoList(){
       description: "Developed Vegen Grocery store website with 4 other developers specifically working on the frontend. Key implementation was the product slider on the homepage.",
       link:'https://pure-spire-62048.herokuapp.com/',
       github:'https://github.com/ShaunSully88/VeganMart'
-    },
+    }, 
   ]);
 
   const [currentPhoto, setCurrentPhoto] = useState();
